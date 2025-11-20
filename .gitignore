@@ -30,7 +30,6 @@ ENV/
 env.bak/
 venv.bak/
 model_env/
-.env
 .venv
 
 # Jupyter Notebook
@@ -119,11 +118,8 @@ tmp/
 temp/
 
 # Environment Variables
-.env
-.env.local
-.env.development
-.env.test
-.env.production
+.env*
+!.env.example
 
 # Package Management
 pip-log.txt
@@ -165,10 +161,6 @@ cython_debug/
 *.bak
 *.backup
 
-# Specific to this project
-# Keep model metadata but exclude actual model files
-!models/model_metadata.json
-!models/feature_names.pkl
-
+# Project Specific
 # Keep small sample data for testing if needed
 !data/sample/
