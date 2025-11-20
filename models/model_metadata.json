@@ -1,0 +1,212 @@
+{
+  "nutrients": [
+    "b12_deficient",
+    "iron_deficient",
+    "diabetes_risk"
+  ],
+  "features": [
+    "RIDAGEYR",
+    "RIAGENDR",
+    "RIDRETH3",
+    "BMXWT",
+    "BMXHT",
+    "BMXBMI",
+    "SDDSRVYR",
+    "RIDSTATR",
+    "RIDRETH1",
+    "RIDEXMON",
+    "DMQMILIZ",
+    "DMDBORN4",
+    "DMDCITZN",
+    "DMDEDUC2",
+    "DMDMARTL",
+    "SIALANG",
+    "SIAPROXY",
+    "SIAINTRP",
+    "FIALANG",
+    "FIAPROXY"
+  ],
+  "performance": {
+    "b12_deficient": {
+      "auc": 0.757915320125521,
+      "calibrated_auc": 0.7846236710224346,
+      "brier_original": 0.37446513876443954,
+      "brier_calibrated": 0.010957275206799857,
+      "pr_auc": 0.026322279599122214,
+      "cv_mean": 0.7768700934347093,
+      "cv_std": 0.022307214159947165,
+      "train_auc": 0.8827846800546655,
+      "overfitting": 0.1248693599291445,
+      "deficient_count": 109,
+      "total_count": 9813,
+      "scale_pos_weight": 89.02752293577981,
+      "evaluation_details": {
+        "precision": 0.0228310502283105,
+        "recall": 0.9090909090909091,
+        "f1": 0.044543429844097995,
+        "calibration_data": {
+          "fraction_positives": [
+            0.0,
+            0.0,
+            0.038461538461538464,
+            0.0,
+            0.0,
+            0.0,
+            0.034482758620689655,
+            0.06896551724137931,
+            0.014285714285714285,
+            0.02090032154340836
+          ],
+          "mean_predicted": [
+            0.018770494159184012,
+            0.13994240839230387,
+            0.2421567477285862,
+            0.34246645743648213,
+            0.45177405040997726,
+            0.5530302215505529,
+            0.6449417841845545,
+            0.7496802426617721,
+            0.8615882115704673,
+            0.9646849008426789
+          ]
+        },
+        "confusion_matrix": {
+          "true_negative": 1085,
+          "false_positive": 856,
+          "false_negative": 2,
+          "true_positive": 20
+        },
+        "specificity": 0.5589902112313241,
+        "sensitivity": 0.9090909090909091,
+        "threshold_performance": []
+      }
+    },
+    "iron_deficient": {
+      "auc": 0.8087673586884149,
+      "calibrated_auc": 0.810466845553026,
+      "brier_original": 0.17014329732571895,
+      "brier_calibrated": 0.10889259150630154,
+      "pr_auc": 0.3969162969077132,
+      "cv_mean": 0.8020079238106899,
+      "cv_std": 0.010967037677828691,
+      "train_auc": 0.8840764844826521,
+      "overfitting": 0.07530912579423721,
+      "deficient_count": 1510,
+      "total_count": 9813,
+      "scale_pos_weight": 5.498675496688742,
+      "evaluation_details": {
+        "precision": 0.35784313725490197,
+        "recall": 0.7251655629139073,
+        "f1": 0.47921225382932164,
+        "calibration_data": {
+          "fraction_positives": [
+            0.011940298507462687,
+            0.04330708661417323,
+            0.04113924050632911,
+            0.12550607287449392,
+            0.12060301507537688,
+            0.27380952380952384,
+            0.31125827814569534,
+            0.3484848484848485,
+            0.4925373134328358,
+            0.5185185185185185
+          ],
+          "mean_predicted": [
+            0.051357675705160664,
+            0.15335547246449577,
+            0.24917268102304846,
+            0.34842686107766774,
+            0.4498329751156083,
+            0.545723020320847,
+            0.6457289050746438,
+            0.7505657361312346,
+            0.8555929215986338,
+            0.9104869807208026
+          ]
+        },
+        "confusion_matrix": {
+          "true_negative": 1268,
+          "false_positive": 393,
+          "false_negative": 83,
+          "true_positive": 219
+        },
+        "specificity": 0.7633955448524985,
+        "sensitivity": 0.7251655629139073,
+        "threshold_performance": [
+          {
+            "threshold": 0.1,
+            "precision": 0.2677165354330709,
+            "recall": 0.9006622516556292
+          },
+          {
+            "threshold": 0.2,
+            "precision": 0.368705035971223,
+            "recall": 0.6788079470198676
+          },
+          {
+            "threshold": 0.3,
+            "precision": 0.4375,
+            "recall": 0.41721854304635764
+          },
+          {
+            "threshold": 0.5,
+            "precision": 0.5,
+            "recall": 0.17880794701986755
+          },
+          {
+            "threshold": 0.7,
+            "precision": 0.0,
+            "recall": 0.0
+          }
+        ]
+      }
+    },
+    "diabetes_risk": {
+      "auc": 0.5169310420797533,
+      "calibrated_auc": 0.5089289648443648,
+      "brier_original": 0.24804046992001333,
+      "brier_calibrated": 0.08257597706030381,
+      "pr_auc": 0.09180882886267325,
+      "cv_mean": 0.5084605673255218,
+      "cv_std": 0.014549776743386365,
+      "train_auc": 0.5800970529056693,
+      "overfitting": 0.063166010825916,
+      "deficient_count": 888,
+      "total_count": 9813,
+      "scale_pos_weight": 10.050675675675675,
+      "evaluation_details": {
+        "precision": 0.09,
+        "recall": 0.4044943820224719,
+        "f1": 0.147239263803681,
+        "calibration_data": {
+          "fraction_positives": [
+            0.09114359415305245,
+            0.09
+          ],
+          "mean_predicted": [
+            0.48940175100328176,
+            0.5094144452363253
+          ]
+        },
+        "confusion_matrix": {
+          "true_negative": 1057,
+          "false_positive": 728,
+          "false_negative": 106,
+          "true_positive": 72
+        },
+        "specificity": 0.592156862745098,
+        "sensitivity": 0.4044943820224719,
+        "threshold_performance": [
+          {
+            "threshold": 0.1,
+            "precision": 0.08994708994708994,
+            "recall": 0.09550561797752809
+          }
+        ]
+      }
+    }
+  },
+  "model_type": "XGBoost",
+  "n_samples": 9813,
+  "n_features": 20
+}
