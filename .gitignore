@@ -1,0 +1,166 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+model_env/
+.env
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Data Files
+data/raw/
+data/processed/
+*.csv
+*.json
+*.xlsx
+*.xls
+*.parquet
+*.h5
+*.hdf5
+
+# Machine Learning Models
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.pb
+models/*.onnx
+models/*.pt
+models/*.pth
+models/*.bin
+saved_models/
+checkpoints/
+
+# Experiment Results
+results/
+experiments/
+runs/
+logs/
+*.log
+
+# Visualization and Plots
+plots/
+figures/
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+
+# Model Artifacts
+mlruns/
+artifacts/
+wandb/
+.mlflow/
+
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.spyderproject
+.spyproject
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary Files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Environment Variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Package Management
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Coverage
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# pytype
+.pytype/
+
+# Cython
+cython_debug/
+
+# Large Files (Git LFS candidates)
+*.zip
+*.tar.gz
+*.tar.bz2
+*.7z
+
+# Backup Files
+*.bak
+*.backup
+
+# Specific to this project
+# Keep model metadata but exclude actual model files
+!models/model_metadata.json
+!models/feature_names.pkl
+
+# Keep small sample data for testing if needed
+!data/sample/
